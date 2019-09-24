@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import spring.boot.mybatis.mysql.model.Person;
-import spring.boot.mybatis.mysql.service.IPerson;
+import spring.boot.mybatis.mysql.service.PersonService;
 
 @RestController
 @RequestMapping("/person")
 public class PersonController {
 
     @Autowired
-    public IPerson person;
+    public PersonService person;
 
     @RequestMapping(method = RequestMethod.GET)
     public Person get(@RequestParam Integer id) {

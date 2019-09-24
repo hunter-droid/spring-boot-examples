@@ -4,11 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import spring.boot.mybatis.mysql.mapper.PersonMapper;
 import spring.boot.mybatis.mysql.model.Person;
-import spring.boot.mybatis.mysql.service.IPerson;
+import spring.boot.mybatis.mysql.service.PersonService;
 
+/*
+Person Service
+ */
 @Service
-public class PersonImpl implements IPerson {
+public class PersonServiceImpl implements PersonService {
 
+    /*
+    注入 personMapper
+     */
     @Autowired
     private PersonMapper personMapper;
 

@@ -101,7 +101,7 @@
     id, name, age, gender, remark
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from person
     where id = #{id,jdbcType=INTEGER}
@@ -111,9 +111,9 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="spring.boot.mybatis.mysql.model.Person">
-    insert into person (id, name, age, 
+    insert into person (id, name, age,
       gender, remark)
-    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER},
       #{gender,jdbcType=CHAR}, #{remark,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="spring.boot.mybatis.mysql.model.Person">

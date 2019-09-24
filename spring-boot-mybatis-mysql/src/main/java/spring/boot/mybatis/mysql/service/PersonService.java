@@ -2,7 +2,10 @@ package spring.boot.mybatis.mysql.service;
 
 import spring.boot.mybatis.mysql.model.Person;
 
-public interface IPerson {
+/*
+Service 接口
+ */
+public interface PersonService {
     int deleteByPrimaryKey(Integer id);
 
     int insert(Person record);

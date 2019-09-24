@@ -1,9 +1,7 @@
 package spring.boot.mybatis.mysql.mapper;
 
-import org.springframework.stereotype.Component;
 import spring.boot.mybatis.mysql.model.Person;
 
-@Component
 public interface PersonMapper {
     int deleteByPrimaryKey(Integer id);
 
