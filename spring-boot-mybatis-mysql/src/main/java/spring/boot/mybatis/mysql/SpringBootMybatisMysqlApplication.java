@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @MapperScan("spring.boot.mybatis.mysql.mapper")
 public class SpringBootMybatisMysqlApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(SpringBootMybatisMysqlApplication.class, args);
     }
-
 }
