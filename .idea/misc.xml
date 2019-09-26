@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/spring-boot-lombok/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-mybatis-mysql/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-mybatis-mysql-annotate/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/pom.xml" />
       </list>
     </option>
   </component>
